@@ -34,12 +34,12 @@ async def start(update: Update, context: CallbackContext) -> None:
         caption = f"""
         ***Hey there! {update.effective_user.first_name}***
               
-***ɪ ᴀᴍ ᴄᴀᴛᴄʜᴇʀ ᴘʀɪᴅᴇ ʙᴏᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜ'ʀᴇ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛᴀᴘ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ꜱᴇᴇ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅS***
+***I am Wrestler Guess Bot Support ( UFC , WWE , AEW , OTHER MMA )***
                """
         keyboard = [
-            [InlineKeyboardButton("Add Me", url=f'https://t.me/Catcher_pridebot?startgroup=new')],
+            [InlineKeyboardButton("Add Me", url=f'https://t.me/GuessWrestlerBot?startgroup=new')],
             [InlineKeyboardButton("Help", callback_data='help'),
-             InlineKeyboardButton("Support", url=f'https://t.me/{SUPPORT_CHAT}')],
+             InlineKeyboardButton("Support", url=f'https://t.me/LegitXSupport')],
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         photo_url = random.choice(PHOTO_URL)
@@ -72,15 +72,15 @@ async def button(update: Update, context: CallbackContext) -> None:
         help_text = """
     ***Help Section :***
     
-***/grab: To Guess waifu (only works in group)***
+***/grab: To Guess Wrestler (only works in group)***
 ***/fav: Add Your fav***
 ***/trade : To trade waifu***
 ***/gift: Give any waifu to another user.. (only works in groups)***
-***/harem: To see Your waifu***
+***/harem: To see Your Wrestler***
 ***/topgroups : See Top Groups.. Ppl Guesses Most in that Groups***
 ***/top: Too See Top Users***
 ***/ctop : Your ChatTop***
-***/changetime: Change waifu appear time (only works in Groups)***
+***/changetime: Change appear time (only works in Groups)***
    """
         help_keyboard = [[InlineKeyboardButton("Back", callback_data='back')]]
         reply_markup = InlineKeyboardMarkup(help_keyboard)
